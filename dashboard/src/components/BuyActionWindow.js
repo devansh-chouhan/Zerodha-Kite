@@ -15,7 +15,7 @@ const BuyActionWindow = ({ uid, mode }) => {
 
     const handleActionClick = () => {
         console.log("Order payload:", { name: uid, qty: stockQuantity, price: stockPrice, mode: mode });
-        axios.post("http://localhost:8080/newOrder", {
+        axios.post("https://zerodha-kite-txg7.onrender.com/newOrder", {
             name: uid,
             qty: stockQuantity,
             price: stockPrice,
